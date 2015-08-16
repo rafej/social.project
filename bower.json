@@ -1,0 +1,16 @@
+{
+  "name": "The Social Project",
+  "version": "0.0.1",
+  "homepage": "https://github.com/rafej/social",
+  "authors": [
+    "rafej <rafe.s@hotmail.com>"
+  ],
+  "description": "The Social Project",
+  "main": "index.html",
+  "keywords": [
+    "the",
+    "social",
+    "project"
+  ],
+  "license": "MIT"
+}
