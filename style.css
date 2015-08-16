@@ -3,6 +3,7 @@
 
 
 html, body { 
+overflow-y : scroll;
 margin: 0;
 
  padding: 0;
@@ -29,12 +30,16 @@ header ul { float: none; margin: auto;} }
 
 
 
+.socialover {
+    position: fixed;
+    text-align: center;
 
+}
 .social {
   position: fixed;
   width: 100%;
   text-align: center;
-  transform: translateY(-50%);
+
   vertical-align: top;
 }
 
@@ -102,7 +107,9 @@ header ul { float: none; margin: auto;} }
   background-color: #3b5999;
   color: white;
 }
+.slide2{
 
+}
 
 
 
