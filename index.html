@@ -1,91 +1,77 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>The Social Project</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<title>the social project.</title>
 
-    
-	</head>
-	<body>
-	<!--
-	 <div id = "socialover">
-
-  <div class="social">
-  <a href="https://instagram.com/rfjs" class="link instagram" target="_parent"><span class="fa fa-instagram"></span></a>
-  <a href="http://facebook.com/krillwebdesign" class="link facebook" target="_parent"><span class="fa fa-facebook-square"></span></a>
-  <a href="https://twitter.com/rafejs" class="link twitter" target="_parent"><span class="fa fa-twitter"></span></a>
-  <a href="https://github.com/rafej" class="link github" target="_parent"><span class="fa fa-github"></span></a>
-</div>
-</div>
--->
-
-		<!-- Header -->
-			<section id="header">
-				<div class="inner">
-					<h1>How big is facebook?
-					</h1>
-					
-				</div>
+</head>
+<body onload="startCount();">
+<div class="container">
+<div id="head" class="twelve columns">
+	<div class="disclaim">
+		<h1>How big is facebook?</h1>
+	</div>
+	<div class="arrow"></div>
 	
-  		</section>
 
-		<!-- One -->
-			<section id="one" class="main style1">
-				<div class="container">
-					<div class="row 150%">
-							<header class="major">
-
-          					<h2>Every second, there are 46,000 new posts to facebook.</h2>
-							</header>
-						</div>
-						<div class="circle__wrapper">
-  				<a class="circle" href="#"></a>
+</div>
+	<div id="head2" class="twelve columns">
+		<div class="disclaim2">
+			<h2>Every second, there are 46,000 new posts to facebook.</h2>
+		</div>
+		<span class="posts"> <div id="time">0</div>
+			<svg width="250" height="250" viewbox="0 0 250 250">
+			 <path id="border" transform="translate(125, 125)"/>
+  			<path id="loader" transform="translate(125, 125) scale(.84)"/>
+</svg>
+		</span>
+	</div>
+	<div id="head3" class="twelve columns">
+		<div class="disclaim3">
+			<h2>In turn, in each second of the day over <b>52,000</b> likes are given on facebook</h2>
+		</div>
+		<span class="likes"></span>
+	</div>
+	<div id="head4" class="twelve columns">
+		<div class="disclaim4">
+			<span class="insta"></span>
+			<span class="twit"></span>
+			<span class="snap"></span>
+		</div>
+	</div>
+	<div id="head5" class="twelve columns">
+		<div class="disclaim4">
+		<h2>If facebook's monthly user base made up a country's population, that population would make facebook the largest country (population wise) in the world. </h2>
+			<div class="flags">
+				<div class="faceflag"></div>
+				<div class="china"></div>
+				<div class="india"></div>
+				<div class="usa"></div>
+			</div>
+		</div>
+		<div class="twelve columns"id="head6">
+			<div class="disclaim5">
+				<h1 class="thank">Thanks for reading this</h1>
+				<h2 class="follow">Follow me</h2>
+				<div class="social">
+					<i class="fa fa-twitter"></i>
+					<i class="fa fa-paper-plane"></i>
+					<i class="fa fa-facebook"></i>
+					<i class="fa fa-instagram"></i>
 				</div>
-					</div>
-			</section>
 
-		<!-- Two -->
-			<section id="two" class="main style2">
-				<div class="container">
-					<div class="row 150%">
-            <header class="major">
-              <h2>There are 52,083 new likes on facebook every single second</h2>
-            </header>
-						</div>
-								
-							
-					
-				</div>
-			</section>
-		<!-- Footer -->
-			<section id="footer">
-				<ul class="icons">
-					<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
-					<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
-					<li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
-				</ul>
-			</section>
+			</div>
+		</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script type="text/javascript" src="assets/js/wow.min.js"></script>
-  			<script>
-              new WOW().init();
-              </script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-      
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+	</div>
 
-	</body>
+</div>
+<script src="js/main.js"></script>
+</body>
 </html>
