@@ -11,7 +11,7 @@
 	<title>the social project.</title>
 
 </head>
-<body onload="startCount();">
+<body onload='startCount();' >
 <div class="container">
 <div id="head" class="twelve columns">
 	<div class="disclaim">
@@ -24,19 +24,20 @@
 	<div id="head2" class="twelve columns">
 		<div class="disclaim2">
 			<h2>Every second, there are 46,000 new posts to facebook.</h2>
+			<div class="posts"> <div id="time">0</div>
+			<div class="pie"></div>
 		</div>
-		<span class="posts"> <div id="time">0</div>
-			<svg width="250" height="250" viewbox="0 0 250 250">
-			 <path id="border" transform="translate(125, 125)"/>
-  			<path id="loader" transform="translate(125, 125) scale(.84)"/>
-</svg>
-		</span>
+		</div>
+		
 	</div>
 	<div id="head3" class="twelve columns">
 		<div class="disclaim3">
 			<h2>In turn, in each second of the day over <b>52,000</b> likes are given on facebook</h2>
 		</div>
-		<span class="likes"></span>
+		<div class="likediv">
+		<div id ="liketext">0</div>
+		<div class="like"><img src="likes.png" alt=""></div>
+		</div>
 	</div>
 	<div id="head4" class="twelve columns">
 		<div class="disclaim4">

@@ -1,8 +1,13 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
 html,body {
     margin:0 auto;
     padding:0;
     background-color: #44619d;
     color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+	font-family: 'Roboto',sans-serif;
 }
 #head {
 	width: 100%;
@@ -11,6 +16,8 @@ html,body {
 	text-align: center;
 	line-height: 1.5em;
 	font-size:2.5em;
+	color: #fff;
+	padding-bottom: 25%;
 }
 .disclaim{
 	padding-top: 25%;
@@ -37,17 +44,37 @@ html,body {
 	position: relative;
 	text-align: center;
 	margin:0 auto;
+	padding-bottom: 25%;
 }
 .disclaim2 {
 	padding-top: 25%;
 	padding-bottom: 25%;
-
+	color:#fff;
 }
-span .posts {
-
+.disclaim3 {
+	padding-top: 25%;
+	padding-bottom: 25%;
+	color:#fff;
+}
+#head3 {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	text-align: center;
+	margin: 0 auto;
+	color: #fff;
+}
+.posts {
+	display: inline-block;
+	position: absolute;
+	top:40%;
+	left:95%;
+	text-align: center;
+	color: #fff;
+	font-size: 25px;
 }
 svg {
-  display: block;
+  display: inline-block;
   
 }
 #loader {
@@ -55,5 +82,66 @@ svg {
 }
 #border {
 	fill:#fff;
+}
+.pie {
+	width: 200px; height: 200px;
+	border-radius: 50%;
+	background: #44619d;
+	background-image: linear-gradient(to right, transparent 50%, currentColor 0);
+	color: #fff;
+}
+
+.pie::before {
+	content: '';
+	display: block;
+	margin-left: 50%;
+	height: 100%;
+	border-radius: 0 100% 100% 0 / 50%;
+	background-color: inherit;
+	transform-origin: left;
+	animation: spin 0.5s linear infinite, bg 1s step-end infinite;
+	animation-delay: 0s;
+
+}
+#liketext {
+	bottom: 80%;
+
+	left:98%;
+	position: absolute;
+}
+
+@keyframes spin {
+	to { transform: rotate(.5turn); }
+}
+@keyframes bg {
+	50% { background: currentColor; }
+}
+img {
+	width: 200px;
+	height: 200px;
+	position: relative;
+}
+.like {
+	width:100px;
+	height: 100px;
+	bottom: 25.0em;
+	left:55%;
+	position: relative;
+	display:inline-block;
+-webkit-animation: likes 1s infinite ease-in-out;
+-moz-animation: likes 1s infinite ease-in-out;
+-o-animation: likes 1s infinite ease-in-out;
+}
+@-webkit-keyframes likes {
+from { -webkit-transform: rotate(360deg) scale(1) skew(-180deg) translate(-3px); }
+to { -webkit-transform: rotate(335deg) scale(1) skew(-180deg) translate(0px); }
+}
+@-moz-keyframes likes {
+from { -moz-transform: rotate(360deg) scale(1) skew(-180deg) translate(-3px); }
+to { -moz-transform: rotate(335deg) scale(1) skew(-180deg) translate(0px); }
+}
+@-o-keyframes likes {
+from { -o-transform: rotate(360deg) scale(1) skew(-180deg) translate(-3px); }
+to { -o-transform: rotate(335deg) scale(1) skew(-180deg) translate(0px); }
 }
 
