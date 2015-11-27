@@ -8,10 +8,10 @@ function startCount() {
 function count() {
   var t = document.getElementById('time');
   var currentNum = parseFloat(t.innerHTML);
-  t.innerHTML = currentNum+46000;
+  t.innerHTML = currentNum+46000+ (' posts per second');
 }
 function count2() {
   var s = document.getElementById('liketext');
   var d = parseFloat(s.innerHTML);
-  s.innerHTML = d+52000;
+  s.innerHTML = d+52000+(' likes per second');
 }
